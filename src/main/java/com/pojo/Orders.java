@@ -1,18 +1,21 @@
 package com.pojo;
 
+import java.util.Date;
+
 public class Orders {
     private String orderId;
     private String userId;
     private String driverId;
-    private Boolean orderType;
+    private boolean orderType;
     private String startX;
     private String startY;
     private String endX;
     private String endY;
     private Long price;
     private Long number;
-    private Boolean status;
-    private DateTime createTime;
+    private boolean status;
+    private java.util.Date createTime;
+    private java.util.Date lastTime;
 
     public String getOrderId() {
         return orderId;
@@ -38,11 +41,11 @@ public class Orders {
         this.driverId = driverId;
     }
 
-    public Boolean getOrderType() {
+    public boolean isOrderType() {
         return orderType;
     }
 
-    public void setOrderType(Boolean orderType) {
+    public void setOrderType(boolean orderType) {
         this.orderType = orderType;
     }
 
@@ -94,29 +97,27 @@ public class Orders {
         this.number = number;
     }
 
-    public Boolean getStatus() {
+    public boolean isStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 
-    public DateTime getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(DateTime createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
-    public DateTime getLastTime() {
+    public Date getLastTime() {
         return lastTime;
     }
 
-    public void setLastTime(DateTime lastTime) {
+    public void setLastTime(Date lastTime) {
         this.lastTime = lastTime;
     }
-
-    private DateTime lastTime;
 }

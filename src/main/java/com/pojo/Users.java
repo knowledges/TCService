@@ -1,16 +1,13 @@
 package com.pojo;
-/* 用户表-乘客 */
+
+import java.util.Date;
+
 public class Users {
-    /* 用户id */
     private String id;
-    /* 用户名称 */
     private String userName;
-    /* 用户密码 */
     private String password;
-    /* 用户手机号 */
     private String phone;
-    /* 用户创建时间 */
-    private DateTime createTime;
+    private java.util.Date createTime;
 
     public String getId() {
         return id;
@@ -44,11 +41,11 @@ public class Users {
         this.phone = phone;
     }
 
-    public DateTime getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(DateTime createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 }

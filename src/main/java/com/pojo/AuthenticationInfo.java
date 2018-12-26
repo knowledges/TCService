@@ -1,15 +1,17 @@
 package com.pojo;
 
+import java.util.Date;
+
 public class AuthenticationInfo {
     private String userId;
-    private Boolean sex;
+    private boolean sex;
     private String card;
     private String cardImg;
     private String brand;
     private String plateNumber;
-    private DateTime startTime;
-    private DateTime endTime;
-    private Boolean remind;
+    private java.util.Date startTime;
+    private java.util.Date endTime;
+    private boolean remind;
     private String drivingImg;
     private String drivsingImg;
 
@@ -21,11 +23,11 @@ public class AuthenticationInfo {
         this.userId = userId;
     }
 
-    public Boolean getSex() {
+    public boolean isSex() {
         return sex;
     }
 
-    public void setSex(Boolean sex) {
+    public void setSex(boolean sex) {
         this.sex = sex;
     }
 
@@ -61,27 +63,27 @@ public class AuthenticationInfo {
         this.plateNumber = plateNumber;
     }
 
-    public DateTime getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(DateTime startTime) {
+    public void setStartTime(Date startTime) {
         this.startTime = startTime;
     }
 
-    public DateTime getEndTime() {
+    public Date getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(DateTime endTime) {
+    public void setEndTime(Date endTime) {
         this.endTime = endTime;
     }
 
-    public Boolean getRemind() {
+    public boolean isRemind() {
         return remind;
     }
 
-    public void setRemind(Boolean remind) {
+    public void setRemind(boolean remind) {
         this.remind = remind;
     }
 

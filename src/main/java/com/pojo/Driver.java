@@ -1,12 +1,14 @@
 package com.pojo;
 
+import java.util.Date;
+
 public class Driver {
     private String id;
     private String userName;
     private String password;
     private String phone;
-    private Boolean isAuthentication;
-    private DateTime createTime;
+    private boolean isAuthentication;
+    private java.util.Date createTime;
 
     public String getId() {
         return id;
@@ -40,19 +42,19 @@ public class Driver {
         this.phone = phone;
     }
 
-    public Boolean getAuthentication() {
+    public boolean isAuthentication() {
         return isAuthentication;
     }
 
-    public void setAuthentication(Boolean authentication) {
+    public void setAuthentication(boolean authentication) {
         isAuthentication = authentication;
     }
 
-    public DateTime getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(DateTime createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 }
